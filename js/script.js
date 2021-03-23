@@ -1,38 +1,4 @@
 
-/* $('section').each(function (i) {
-    var moveTop;
-    $(this).on('mousewheel DOMMouseScroll', function (e) {
-        var mouseEvent = e.originalEvent;
-        var delta = 0;
-        if (mouseEvent.detail) {
-            //파이어폭스
-            delta = mouseEvent.detail * -40;
-        } else {
-            delta = mouseEvent.wheelDelta;
-        }
-        // console.log('delta:' + delta);
-
-        if (delta < 0) {
-            if ($(this).next().length) {
-                //위치값
-                moveTop = $(this).next().offset().top;
-            }
-        } else {
-            if ($(this).prev().length) {
-                moveTop = $(this).prev().offset().top;
-            }
-        }
-
-        $('html,body').stop().animate({
-            scrollTop: moveTop
-        }, 300)
-
-        // $('.menuWrap').css('display','none');
-
-    })
-}) */
-
-
 var widthW = $(window).width();
 
 if (widthW > 767) {
@@ -41,7 +7,6 @@ if (widthW > 767) {
     }, function () {
         $(this).children('.menu-list').hide();
     })
-    // scroll();
 } else {
     $('.logo').hide();
     $('.menuWrap').hide();
@@ -63,7 +28,7 @@ $('.close').click(function (e) {
     $('.menuWrap').hide(300);
 })
 
-// function scroll(){
+
 $(window).scroll(function () {
     //현재 스크롤 양
     var $sct = $(this).scrollTop();
@@ -123,7 +88,6 @@ $(window).scroll(function () {
         }
     })
 })
-// }
 
 
 //swiper

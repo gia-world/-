@@ -843,9 +843,16 @@ header .shortcut .s-logo a img {
 /* footer */
 footer {
   border-top: 2px solid #DBF5F0;
+  height: 40vh;
+}
+@media screen and (max-width: 767px) {
+  footer {
+    height: auto;
+  }
 }
 footer .footerWrap {
   display: flex;
+  height: 85%;
   gap: 10px;
   justify-content: space-around;
   padding: 30px;

@@ -91,7 +91,6 @@ body {
 /* header */
 
 header {
-    // position:relative;
     width: 100%;
     border-top: 5px solid $maincolor;
     position: fixed;
@@ -101,7 +100,6 @@ header {
     background-color: #fff;
 
     .logo {
-        // display: none;
         width: 300px;
         @include ab-center(10px);
         z-index: 1000;
@@ -112,7 +110,6 @@ header {
     }
 
     .menuWrap {
-        // background-color: lavender;
 
         nav {
             margin-top: 80px;
@@ -126,13 +123,6 @@ header {
 
                 &-li {
                     flex-grow: 1;
-
-                    // &:hover {
-                    //     .menu-list {
-                    //         display: block;
-                    //     }
-                    // }
-
                     &-tit {
                         display: block;
                         height: 45px;
@@ -243,7 +233,6 @@ header {
         }
 
         &.active {
-            // width: 100%;
             width: 320px;
             min-height: 80vh;
             position: absolute;
@@ -256,20 +245,15 @@ header {
                 margin-top: 0;
 
                 .menu {
-                    // width:100%;
                     flex-direction: column;
                     flex-wrap: wrap;
                     padding-right: 74%;
-                    // background-color: rosybrown;
-
-                    // text-align: left;
                     @include responsive($m) {
                         padding-right: 0;
                     }
 
                     &-li {
                         border-bottom: 1px solid $light;
-                        // padding-left:10%;
 
                         &st {
                             left: 30%;
@@ -302,7 +286,6 @@ header {
             .gnb {
                 position: static;
                 width: 100%;
-                // text-align: center;
 
                 &-list {
                     flex-direction: column;
@@ -337,7 +320,6 @@ header {
 
     .shortcut {
         display: none;
-        // display: flex;
         align-items: center;
         gap: 0 20px;
 
@@ -546,7 +528,6 @@ header {
 
             @include responsive($m) {
                 flex: 1 0 100%;
-                // height:300px;
                 padding-top: 40vh;
                 background-position: center bottom;
             }
@@ -608,11 +589,8 @@ header {
             gap: 1vw;
 
             &-box {
-                // background-color: aqua;
                 max-width: 655px;
                 height: 85vh;
-                // flex-grow: 1;
-                // width: 50%;
                 flex: 1;
 
                 @include responsive(1200px) {
@@ -656,7 +634,6 @@ header {
                 }
 
                 &-text {
-                    // background-color: blue;
                     display: flex;
                     height: 10vh;
                     justify-content: space-around;
@@ -672,7 +649,6 @@ header {
 
     #customerWrap {
         .cs-banner {
-
             height: 40vh;
             box-sizing: border-box;
             padding: 10vh 10vw;
@@ -705,10 +681,7 @@ header {
             }
 
             @include responsive($m) {
-                // align-items: center;
-                // flex-wrap: wrap;
                 flex-direction: column;
-                // padding-top:0;
                 height: 70vh;
             }
 
@@ -785,12 +758,10 @@ header {
             }
 
         }
-
     }
 
     #snsWrap {
         height: 60vh;
-        // background-color: cadetblue;
         padding-top: 3vh;
         box-sizing: border-box;
 
@@ -850,10 +821,14 @@ header {
 /* footer */
 footer {
     border-top: 2px solid $light;
-    // height: 40vh;
+    height: 40vh;
+    @include responsive($m){
+        height:auto;
+    }
 
     .footerWrap {
         display: flex;
+        height:85%;
         gap: 10px;
         justify-content: space-around;
         padding: 30px;
@@ -889,10 +864,8 @@ footer {
         }
 
         .newletter {
-            // flex:1;
             text-align: center;
             line-height: 2.2;
-            // background-color: $light;
             padding: 20px;
             border: 1px dotted $maincolor;
 
@@ -938,15 +911,12 @@ aside {
     top: 50%;
     transform: translateY(-50%);
     z-index: 10000;
-    // background-color: aqua;
 
     li {
         background-color: #000;
         width: 7px;
         height: 70px;
         margin: 1px;
-        // margin: 30px 0;
-        // border-radius: 50%;
         text-indent: -9999px;
         opacity: 0.2;
 
@@ -961,24 +931,4 @@ aside {
         }
     }
 
-    // .top {
-    //     // position: fixed;
-    //     // bottom: 50px;
-    //     // right: 50px;
-
-    //     // z-index: 1000;
-
-    //     a {
-    //         display: block;
-    //         color: #fff;
-    //         width: 30px;
-    //         height: 30px;
-    //         line-height: 30px;
-    //         border-radius: 50%;
-    //         background-color: $dark;
-    //         text-align: center;
-    //         opacity: 0.7;
-    //         margin-top:20px;
-    //     }
-    // }
 }
