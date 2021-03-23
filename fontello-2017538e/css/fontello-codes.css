@@ -1,0 +1,12 @@
+
+.icon-search:before { content: '\e800'; } /* '' */
+.icon-cart:before { content: '\e801'; } /* '' */
+.icon-heart:before { content: '\e802'; } /* '' */
+.icon-close:before { content: '\e803'; } /* '' */
+.icon-left:before { content: '\e804'; } /* '' */
+.icon-plus:before { content: '\e805'; } /* '' */
+.icon-right:before { content: '\e806'; } /* '' */
+.icon-heart-filled:before { content: '\e807'; } /* '' */
+.icon-concierge:before { content: '\e808'; } /* '' */
+.icon-menu:before { content: '\f0c9'; } /* '' */
+.icon-user:before { content: '\f2be'; } /* '' */

@@ -1,0 +1,111 @@
+//color setting
+$maincolor:#0ABAB5;
+$subcolor:#A4E5E0;
+$light:#DBF5F0;
+$dark:#0C6170;
+
+$e_font:'Montserrat',
+sans-serif;
+
+//responsive
+$xl:1366px;
+$l:1024px;
+$m:767px;
+$s:420px;
+
+//font-size
+
+$tit:40px;
+$subtit:19px;
+$text:16px;
+$mtit:22px;
+$msubtit:16px;
+$mtext:14px;
+
+//mixin
+@mixin responsive($media) {
+    @media screen and (max-width:$media) {
+        @content;
+    }
+}
+
+@mixin icon($c:#333, $s:18px) {
+    i {
+        color: $c;
+        font-size: $s;
+    }
+}
+
+@mixin menu-hover($w:80%, $l:10%) {
+    position: relative;
+
+    &::before {
+        content: "";
+        display: block;
+        background: $maincolor;
+        width: 0;
+        height: 35%;
+        opacity: 0.3;
+        position: absolute;
+        top: 50%;
+        left: $l;
+        transition: 0.5s;
+        text-align: left;
+    }
+
+    &:hover {
+        &::before {
+            width: $w;
+        }
+    }
+
+}
+
+@mixin ab-center($t:null) {
+    position: absolute;
+    left: 50%;
+    top: $t;
+    transform: translateX(-50%);
+    @content;
+}
+
+@mixin bg($src, $p:center) {
+    background: {
+        image: $src;
+        size: cover;
+        position: $p;
+        repeat: no-repeat;
+    }
+}
+
+@mixin more($m:0 auto) {
+    width: 100px;
+    height: 30px;
+    border: 1px solid $light;
+    padding: 3px 0;
+    margin: $m;
+    background-color: rgba(255, 255, 255, .4);
+
+    text: {
+        transform: capitalize;
+        align: center
+    }
+
+    a {
+        display: block;
+        color: $dark;
+    }
+
+    &:hover {
+        background-color: $light;
+        transition: background 0.3s;
+    }
+}
+
+@mixin mobiletext {
+
+    h4,
+    p:first-of-type {
+        background-color: rgba(255, 255, 255, .8);
+    }
+}
