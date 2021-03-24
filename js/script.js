@@ -9,7 +9,7 @@ if (widthW > 767) {
       $(this).children(".menu-list").hide();
     }
   );
-} else {
+} else if (widthW <= 767) {
   $(".logo").hide();
   $(".menuWrap").hide();
   $(".shortcut").css("display", "flex");
@@ -33,10 +33,10 @@ $(".close").click(function (e) {
 $(window).scroll(function () {
   //현재 스크롤 양
   var $sct = $(this).scrollTop();
-
+ 
   //일정 스크롤 이상 움직이면 헤더 숏컷만 보이기
   if (widthW > 767) {
-    if ($sct > 100) {
+    if ($sct > 100 ) {
       // console.log($sct);
       $(".shortcut").css("display", "flex");
       $(".menuWrap").hide();

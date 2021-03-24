@@ -60,7 +60,7 @@ table {
 :root {
   --swiper-theme-color: #0c6170;
   --swiper-navigation-size: 30px;
-  --swiper-navigation-color: #0C6170;
+  --swiper-navigation-color: #0c6170;
 }
 
 body {
@@ -595,54 +595,33 @@ header .shortcut .s-logo a img {
 }
 #container #curationWrap .curation {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   gap: 1vw;
+  width: 100%;
+  height: 85vh;
+}
+@media screen and (max-width: 767px) {
+  #container #curationWrap .curation {
+    width: 70%;
+    height: auto;
+    flex-direction: column;
+    margin: 0 auto;
+  }
 }
 #container #curationWrap .curation-box {
   max-width: 655px;
-  height: 85vh;
+  height: 75vh;
   flex: 1;
-}
-@media screen and (max-width: 1200px) {
-  #container #curationWrap .curation-box {
-    width: 300px;
-    max-width: none;
-    margin-top: 10vh;
-    box-sizing: border-box;
-  }
-}
-@media screen and (max-width: 620px) {
-  #container #curationWrap .curation-box {
-    height: 42.5vh;
-    margin-top: 0;
-  }
 }
 #container #curationWrap .curation-box-media {
   width: 100%;
-  height: 75vh;
-  max-height: 655px;
   margin: 0 auto;
 }
-@media screen and (max-width: 1200px) {
-  #container #curationWrap .curation-box-media {
-    height: 300px;
-    max-height: none;
-  }
-}
-@media screen and (max-width: 620px) {
-  #container #curationWrap .curation-box-media {
-    height: 80%;
-  }
-}
-#container #curationWrap .curation-box-media video {
-  display: block;
-  height: 100%;
-  margin: 0 auto;
-}
+#container #curationWrap .curation-box-media video,
 #container #curationWrap .curation-box-media img {
   display: block;
-  height: 100%;
+  width: 100%;
   margin: 0 auto;
 }
 #container #curationWrap .curation-box-text {
@@ -900,11 +879,20 @@ footer .footerWrap .newletter {
   line-height: 2.2;
   padding: 20px;
   border: 1px dotted #0ABAB5;
+  vertical-align: center;
 }
 @media screen and (max-width: 767px) {
   footer .footerWrap .newletter {
     line-height: 2;
     padding: 10px 20px;
+  }
+}
+footer .footerWrap .newletter h3 {
+  margin-top: 10%;
+}
+@media screen and (max-width: 767px) {
+  footer .footerWrap .newletter h3 {
+    margin-top: 0;
   }
 }
 footer .footerWrap .newletter input {
