@@ -835,7 +835,7 @@ footer {
       }
     }
 
-    .newletter {
+    .newsletter {
       text-align: center;
       line-height: 2.2;
       padding: 20px;
@@ -846,7 +846,7 @@ footer {
         line-height: 2;
         padding: 10px 20px;
       }
-      h3 {
+      &-tit{
         margin-top: 10%;
         @include responsive($m) {
           margin-top: 0;

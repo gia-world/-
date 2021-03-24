@@ -874,7 +874,7 @@ footer .footerWrap .fnb > ul {
     gap: 20px;
   }
 }
-footer .footerWrap .newletter {
+footer .footerWrap .newsletter {
   text-align: center;
   line-height: 2.2;
   padding: 20px;
@@ -882,28 +882,28 @@ footer .footerWrap .newletter {
   vertical-align: center;
 }
 @media screen and (max-width: 767px) {
-  footer .footerWrap .newletter {
+  footer .footerWrap .newsletter {
     line-height: 2;
     padding: 10px 20px;
   }
 }
-footer .footerWrap .newletter h3 {
+footer .footerWrap .newsletter-tit {
   margin-top: 10%;
 }
 @media screen and (max-width: 767px) {
-  footer .footerWrap .newletter h3 {
+  footer .footerWrap .newsletter-tit {
     margin-top: 0;
   }
 }
-footer .footerWrap .newletter input {
+footer .footerWrap .newsletter input {
   padding: 5px 10px;
 }
-footer .footerWrap .newletter input:first-of-type {
+footer .footerWrap .newsletter input:first-of-type {
   border: none;
   border-bottom: 1px solid #0C6170;
   background-color: transparent;
 }
-footer .footerWrap .newletter input:last-of-type {
+footer .footerWrap .newsletter input:last-of-type {
   border: 1px solid #0C6170;
   color: #fff;
   font-family: "Montserrat", sans-serif;
