@@ -1,6 +1,6 @@
 @charset 'utf-8';
-@import 'reset';
-@import 'setting';
+@import "reset";
+@import "setting";
 
 :root {
   --swiper-theme-color: #0c6170;
@@ -120,7 +120,7 @@ header {
         letter-spacing: -0.02em;
 
         &-li {
-          flex-grow:1;
+          flex-grow: 1;
           &-tit {
             display: block;
             height: 45px;
@@ -846,7 +846,7 @@ footer {
         line-height: 2;
         padding: 10px 20px;
       }
-      &-tit{
+      &-tit {
         margin-top: 10%;
         @include responsive($m) {
           margin-top: 0;
