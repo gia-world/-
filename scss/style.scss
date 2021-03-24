@@ -234,7 +234,7 @@ header {
 
         &.active {
             width: 320px;
-            min-height: 80vh;
+            height:auto;
             position: absolute;
             top: 50px;
             left: 10px;
@@ -295,6 +295,7 @@ header {
                     padding: {
                         left: 30px;
                         top: 20px;
+                        bottom:20px;
                     }
 
                     li {
@@ -690,6 +691,9 @@ header {
                 flex: 1.5;
                 height: 50vh;
                 max-width: 800px;
+                @include responsive($m){
+                    max-width:100%;
+                }
 
                 img {
                     height: 100%;
@@ -764,6 +768,9 @@ header {
         height: 60vh;
         padding-top: 3vh;
         box-sizing: border-box;
+        @include responsive($m){
+            height:auto;
+        }
 
         .sns-list {
             display: flex;

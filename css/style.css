@@ -297,7 +297,7 @@ header .menuWrap .close {
 }
 header .menuWrap.active {
   width: 320px;
-  min-height: 80vh;
+  height: auto;
   position: absolute;
   top: 50px;
   left: 10px;
@@ -351,6 +351,7 @@ header .menuWrap.active .gnb-list {
   border-top: 1px solid #0C6170;
   padding-left: 30px;
   padding-top: 20px;
+  padding-bottom: 20px;
 }
 header .menuWrap.active .gnb-list li span {
   display: inline-block;
@@ -701,6 +702,11 @@ header .shortcut .s-logo a img {
   height: 50vh;
   max-width: 800px;
 }
+@media screen and (max-width: 767px) {
+  #container #customerWrap .cs-exp-img {
+    max-width: 100%;
+  }
+}
 #container #customerWrap .cs-exp-img img {
   height: 100%;
 }
@@ -762,6 +768,11 @@ header .shortcut .s-logo a img {
   height: 60vh;
   padding-top: 3vh;
   box-sizing: border-box;
+}
+@media screen and (max-width: 767px) {
+  #container #snsWrap {
+    height: auto;
+  }
 }
 #container #snsWrap .sns-list {
   display: flex;
